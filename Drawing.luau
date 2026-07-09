@@ -1,3 +1,4 @@
+print("jbg")
 local DrawingCache = {}
 local DrawingObjects = {}
 
