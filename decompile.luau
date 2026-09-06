@@ -3,6 +3,8 @@ assert(getscriptbytecode, "exploit does not support getscriptbytecode.")
 local last = 0
 local httpservice = cloneref and cloneref(game:GetService("HttpService")) or game:GetService("HttpService")
 
+print("getgenv decompile")
+
 getgenv().decompile = function(scr)
     local ok, bytecode = pcall(getscriptbytecode, scr)
     if not ok then
